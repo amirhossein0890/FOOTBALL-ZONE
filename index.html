@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#07111f"><meta name="description" content="FOOTBALL ZONE؛ مرکز مسابقات زنده، آمار و تحلیل تاکتیکی فوتبال"><link rel="manifest" href="/app.webmanifest"><link rel="icon" href="/icons/icon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>FOOTBALL ZONE | دنیای فوتبال</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap');
+:root{--bg:#07111f;--panel:#0d1b2d;--panel2:#10243b;--line:#1d3550;--blue:#168cff;--cyan:#38c8ff;--muted:#91a6bd;--white:#edf6ff;--green:#29d69a;--red:#ff657d}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 75% -15%,#103c67 0,transparent 38%),var(--bg);color:var(--white);font-family:Vazirmatn,Tahoma,sans-serif}
+button,input,select{font:inherit}button{cursor:pointer}.app{display:flex;min-height:100vh}.sidebar{width:250px;background:#081625;border-left:1px solid var(--line);padding:24px 16px;position:fixed;right:0;top:0;bottom:0;z-index:5;display:flex;flex-direction:column}.brand{display:flex;align-items:center;gap:11px;padding:4px 10px 28px}.logo{width:42px;height:42px;border-radius:13px;background:linear-gradient(135deg,var(--blue),#0750a6);display:grid;place-items:center;font-size:23px;box-shadow:0 0 25px #168cff55}.brand b{font-size:17px;letter-spacing:1px}.brand small{display:block;color:var(--muted);font-size:10px;letter-spacing:2px}.navlabel{color:#607a95;font-size:10px;padding:12px 12px 7px}.nav button{width:100%;border:0;background:none;color:#9db1c7;text-align:right;padding:12px;border-radius:11px;margin:2px 0;display:flex;align-items:center;gap:12px;font-size:13px}.nav button:hover,.nav button.active{background:#12345a;color:#fff}.nav button.active{box-shadow:inset -3px 0 var(--cyan)}.nav .ico{width:20px;text-align:center;font-size:17px}.sidefoot{margin-top:auto;border-top:1px solid var(--line);padding:18px 8px;color:var(--muted);font-size:11px;line-height:1.9}.main{margin-right:250px;width:calc(100% - 250px);padding:25px 34px 60px;max-width:1600px}.topbar{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:28px}.crumb{color:var(--muted);font-size:12px}.top-actions{display:flex;align-items:center;gap:10px}.pill{border:1px solid var(--line);background:#0b1b2c;color:#c5d8eb;padding:9px 13px;border-radius:10px;font-size:11px}.avatar{width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,#1b9dff,#143d7b);display:grid;place-items:center;font-weight:800}.page{display:none;animation:fade .25s}.page.active{display:block}@keyframes fade{from{opacity:.4;transform:translateY(5px)}to{opacity:1;transform:none}}.eyebrow{font-size:11px;color:var(--cyan);letter-spacing:1.3px;font-weight:700}.hero{background:linear-gradient(110deg,#0d2a49dd,#0b1c30 65%),linear-gradient(45deg,#168cff22,#38c8ff11);border:1px solid #1b4770;border-radius:22px;padding:30px;position:relative;overflow:hidden;min-height:205px}.hero:after{content:"⚽";position:absolute;left:5%;top:-40px;font-size:190px;opacity:.055;transform:rotate(-18deg)}h1{font-size:29px;margin:9px 0 7px}h2{font-size:21px;margin:0 0 7px}h3{font-size:15px;margin:0 0 8px}.muted{color:var(--muted);font-size:12px;line-height:1.9}.btn{border:0;background:linear-gradient(100deg,#0878ed,#16a5ff);color:white;padding:11px 17px;border-radius:10px;font-weight:700;font-size:12px;box-shadow:0 7px 20px #0878ed30}.btn.secondary{background:#142b43;border:1px solid #294966;box-shadow:none;color:#cfe4f8}.hero .btn{margin-top:15px}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin:17px 0 24px}.stat,.card{background:linear-gradient(145deg,#102239,#0c1a2b);border:1px solid var(--line);border-radius:16px;padding:17px}.stat .label{color:var(--muted);font-size:11px}.stat strong{font-size:24px;display:block;margin:6px 0}.stat small{color:var(--green);font-size:10px}.sectionhead{display:flex;align-items:end;justify-content:space-between;margin:26px 0 13px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.feature{min-height:155px;position:relative;overflow:hidden;cursor:pointer;transition:.2s}.feature:hover,.coach:hover{transform:translateY(-3px);border-color:#2877b8}.feature .bigico{font-size:28px;margin-bottom:13px}.feature p{font-size:11px;color:var(--muted);line-height:1.8}.tag{display:inline-block;background:#123b61;color:#72caff;padding:4px 8px;border-radius:6px;font-size:9px;margin-bottom:8px}.matchrow{display:grid;grid-template-columns:1fr 1fr;gap:13px}.match{display:flex;align-items:center;justify-content:space-between;padding:15px;background:#0c1b2c;border:1px solid var(--line);border-radius:13px}.team{text-align:center;font-size:11px}.team b{display:block;font-size:20px;margin-bottom:4px}.score{font-size:19px;font-weight:800}.demo{font-size:9px;color:#ffca72;border:1px solid #70582b;border-radius:6px;padding:3px 6px}.coachgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.coach{background:linear-gradient(145deg,#112943,#0b1a2b);border:1px solid var(--line);border-radius:15px;padding:18px;cursor:pointer;transition:.2s}.coach .initial{width:43px;height:43px;border-radius:12px;background:linear-gradient(135deg,#126fc2,#102e54);display:grid;place-items:center;font-size:19px;font-weight:800;margin-bottom:12px}.coach p{font-size:11px;color:var(--muted);line-height:1.8}.coach .link{font-size:10px;color:var(--cyan);margin-top:10px}.split{display:grid;grid-template-columns:1.3fr .7fr;gap:15px}.pitch{position:relative;min-height:440px;border:2px solid #65c78c;border-radius:12px;overflow:hidden;background:repeating-linear-gradient(90deg,#17613e 0,#17613e 10%,#1a6c44 10%,#1a6c44 20%)}.pitch:before{content:"";position:absolute;inset:10px;border:1px solid #b8e8c6aa;border-radius:4px}.halfline{position:absolute;top:0;bottom:0;left:50%;border-left:1px solid #b8e8c6aa}.center{position:absolute;width:100px;height:100px;border:1px solid #b8e8c6aa;border-radius:50%;left:50%;top:50%;transform:translate(-50%,-50%)}.boxarea{position:absolute;top:30%;bottom:30%;width:15%;border:1px solid #b8e8c6aa}.boxarea.left{left:10px}.boxarea.right{right:10px}.player{position:absolute;z-index:2;transform:translate(-50%,-50%);width:35px;height:35px;border-radius:50%;border:2px solid #d7f4ff;background:#0878ed;color:white;display:grid;place-items:center;font-size:10px;font-weight:800;cursor:grab;touch-action:none;box-shadow:0 3px 10px #0007}.player.opp{background:#e34f68}.pitchhint{position:absolute;bottom:14px;right:18px;color:#d7f4df;font-size:10px;z-index:1}.controls{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}.controls select,.controls input{background:#0a1929;border:1px solid var(--line);color:white;border-radius:9px;padding:9px;font-size:11px}.list{display:grid;gap:9px}.listitem{display:flex;justify-content:space-between;align-items:center;padding:12px;background:#0b1b2c;border:1px solid var(--line);border-radius:10px;font-size:11px}.listitem span{color:var(--muted)}.modal{position:fixed;inset:0;background:#020812d9;z-index:20;display:none;place-items:center;padding:20px}.modal.show{display:grid}.modalbox{width:min(760px,100%);max-height:85vh;overflow:auto;background:#0d1e31;border:1px solid #24527a;border-radius:18px;padding:25px;position:relative}.modalbox.wide{width:min(1250px,96vw);height:94vh;max-height:94vh}.modalbox.wide #modalContent{padding-top:10px}.close{position:absolute;left:15px;top:12px;background:#1b3550;border:0;color:white;border-radius:8px;padding:6px 10px}.modalbox ul{color:#c5d7e8;font-size:12px;line-height:2.2}.question{background:#102942;border:1px solid #254765;padding:15px;border-radius:12px;margin:12px 0}.options{display:flex;gap:8px;flex-wrap:wrap}.options button{background:#0a1929;color:#d6e8f8;border:1px solid #2a4a68;padding:9px 12px;border-radius:9px;font-size:11px}.options button.chosen{border-color:var(--cyan);background:#123d60}.notice{padding:12px;border-radius:10px;background:#102b3d;color:#9edaff;font-size:11px;line-height:1.9;margin-top:12px}.mobilemenu{display:none}
+.live-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:15px 0}
+.live-status{display:flex;align-items:center;gap:8px;color:#9db1c7;font-size:11px}
+.live-dot{width:8px;height:8px;border-radius:50%;background:#22c987;box-shadow:0 0 12px #22c987;display:inline-block}
+.live-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.live-card{background:linear-gradient(145deg,#102239,#0b1a2a);border:1px solid var(--line);border-radius:14px;padding:15px;min-width:0}
+.live-card-top{display:flex;justify-content:space-between;gap:8px;align-items:center;color:var(--muted);font-size:10px;margin-bottom:12px}
+.live-teamline{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:10px}
+.live-team{display:flex;align-items:center;gap:8px;min-width:0;font-size:11px}
+.live-team.away{justify-content:flex-end;text-align:right}
+.live-team img{width:25px;height:25px;object-fit:contain}
+.live-team span{overflow:hidden;text-overflow:ellipsis}
+.live-score{font-size:20px;font-weight:900;white-space:nowrap}
+.live-meta{margin-top:11px;color:var(--muted);font-size:10px;display:flex;justify-content:space-between;gap:8px}
+.live-badge{color:#ff777e;background:#48212c;padding:4px 7px;border-radius:6px;font-weight:700}
+.install-app{border:1px solid #2465a0;background:#102b48;color:#dff2ff;border-radius:10px;padding:8px 11px;font:inherit;font-size:12px}.install-app[hidden]{display:none}.live-empty{grid-column:1/-1;padding:24px;text-align:center;border:1px dashed #31506b;border-radius:14px;color:var(--muted);font-size:12px;line-height:2}
+.live-error{color:#ffc1a8;background:#38251f;border:1px solid #704637;padding:13px;border-radius:11px;font-size:11px;line-height:1.9}
+@media(max-width:720px){.live-list{grid-template-columns:1fr}}
+@media(max-width:1050px){.sidebar{width:215px}.main{margin-right:215px;width:calc(100% - 215px);padding:22px}.grid,.coachgrid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:720px){.modal{padding:7px}.modalbox.wide{width:100%;height:96vh;max-height:96vh;padding:16px}.modalbox.wide iframe{height:82vh!important}.sidebar{width:260px;transform:translateX(100%);transition:.25s}.sidebar.open{transform:translateX(0)}.main{margin:0;width:100%;padding:17px}.mobilemenu{display:inline-block}.topbar{margin-bottom:18px}.stats{grid-template-columns:repeat(2,1fr)}.grid,.coachgrid,.matchrow,.split{grid-template-columns:1fr}.hero{padding:23px}.hero h1{font-size:23px}.pitch{min-height:370px}.sectionhead{align-items:start;gap:10px}}
+</style></head>
+<body><div class="app">
+<aside class="sidebar" id="sidebar"><div class="brand"><div class="logo">⚽</div><div><b>FOOTBALL ZONE</b><small>THE WORLD OF FOOTBALL</small></div></div>
+<div class="navlabel">منوی اصلی</div><nav class="nav">
+<button class="active" data-page="home"><span class="ico">⌂</span>داشبورد</button>
+<button data-page="hub"><span class="ico">◉</span>فوتبال هاب</button>
+<button data-page="tactics"><span class="ico">♟</span>کتابخانه تاکتیک</button>
+<button data-page="lab"><span class="ico">▦</span>زمین تاکتیکی</button>
+<button data-page="fantasy"><span class="ico">🏆</span>فانتزی لیگ</button>
+<button data-page="masters"><span class="ico">🎓</span>فوتبال مسترز</button>
+<button data-page="community"><span class="ico">◎</span>جامعه و لیگ عمومی</button>
+</nav><div class="sidefoot">نسخه نمایشی اولیه<br><span style="color:#4c83ad">FOOTBALL ZONE © 2026</span><br>اطلاعات مسابقات نمونه هستند.</div></aside>
+<main class="main"><header class="topbar"><div><button class="pill mobilemenu" onclick="document.getElementById('sidebar').classList.toggle('open')">☰</button> <span class="crumb">FOOTBALL ZONE / <b id="crumb">داشبورد</b></span></div><div class="top-actions"><button class="install-app" id="installApp" hidden>⬇ نصب اپ</button><span class="pill">🔔 اعلان‌ها</span><span class="pill">نسخه آزمایشی</span><div class="avatar">FZ</div></div></header>
+<section class="page active" id="home"><div class="hero"><div class="eyebrow">WELCOME TO THE GAME</div><h1>فوتبال را فقط تماشا نکن؛ <span style="color:var(--cyan)">درکش کن.</span></h1><p class="muted">از تحلیل تاکتیکی مربیان بزرگ تا ساخت تیم رؤیایی خودت؛ همه‌چیز در یک دنیای فوتبالی.</p><button class="btn" onclick="showPage('tactics')">ورود به دنیای تاکتیک ←</button></div>
+<div class="stats"><div class="stat"><span class="label">مربیان کتابخانه</span><strong>۸+</strong><small>در حال توسعه</small></div><div class="stat"><span class="label">سیستم‌های تاکتیکی</span><strong>۱۲</strong><small>قابل بررسی</small></div><div class="stat"><span class="label">امتیاز تمرینی</span><strong id="xp">۱۲۰</strong><small>امتیاز نمایشی</small></div><div class="stat"><span class="label">بخش‌های فعال</span><strong>۷</strong><small>نسخه اولیه</small></div></div>
+<div class="sectionhead"><div><h2>مرکز فرماندهی فوتبال</h2><div class="muted">سریع به بخش موردنظرت برو</div></div></div>
+<div class="grid"><div class="card feature" onclick="showPage('hub')"><div class="bigico">📡</div><h3>Football Hub</h3><p>مسابقات، اخبار، نتایج و آمار فوتبال در یک نگاه.</p></div><div class="card feature" onclick="showPage('tactics')"><div class="bigico">🧠</div><h3>Tactical Library</h3><p>فلسفه مربیان، آرایش‌ها، نقاط قوت و ضعف و WHY IT WORKS.</p></div><div class="card feature" onclick="showPage('lab')"><div class="bigico">🟩</div><h3>Tactical Lab</h3><p>بازیکنان را روی زمین جابه‌جا کن و آرایش بساز.</p></div><div class="card feature" onclick="showPage('fantasy')"><div class="bigico">🏆</div><h3>Fantasy League</h3><p>با پیش‌بینی‌های تمرینی امتیاز بگیر و تیم مجازی بساز.</p></div><div class="card feature" onclick="showPage('masters')"><div class="bigico">🎓</div><h3>Football Masters</h3><p>تاریخ فوتبال، مسابقات تاریخی و چالش BE THE COACH.</p></div><div class="card feature" onclick="showPage('community')"><div class="bigico">🌍</div><h3>Global League</h3><p>لیگ عمومی، رتبه‌بندی و دعوت دوستان؛ آماده اتصال به سرور.</p></div></div>
+<div class="sectionhead"><div><h2>مسابقات امروز</h2><div class="muted">اطلاعات مسابقات از سرویس فوتبال دریافت می‌شود.</div></div><button class="btn secondary" onclick="showPage('hub')">همه مسابقات ←</button></div><div id="homeLiveMatches" class="live-list"><div class="live-empty">در حال دریافت مسابقات…</div></div></section>
+<section class="page" id="hub"><div class="eyebrow">FOOTBALL HUB · LIVE CENTRE</div><h1>مرکز فوتبال</h1><p class="muted">مسابقات امروز، نتایج و وضعیت بازی‌ها با منطقه زمانی تهران.</p><div class="live-toolbar"><div class="live-status"><span class="live-dot"></span><span id="liveConnection">در حال بررسی اتصال…</span><span id="liveUpdated"></span></div><button class="btn" id="refreshLive" onclick="loadLiveMatches(true)">↻ تازه‌سازی</button></div><div id="liveMessage" class="notice">در حال اتصال به سرویس نتایج…</div><div class="sectionhead"><h2>مسابقات</h2><span class="tag">LIVE MATCH CENTRE</span></div><div class="controls" style="margin:12px 0"><input type="date" id="liveDate" aria-label="تاریخ مسابقات"><select id="liveFilter" onchange="applyLiveFilter()"><option value="all">همه مسابقات</option><option value="live">فقط زنده</option><option value="upcoming">شروع‌نشده</option><option value="finished">پایان‌یافته</option></select><button class="btn secondary" onclick="loadLiveMatches(true)">نمایش تاریخ انتخابی</button><button class="btn secondary" onclick="loadLiveMatches(true,'live')">نمایش بازی‌های زنده همه لیگ‌ها</button></div><div id="liveMatches" class="live-list"><div class="live-empty">در حال دریافت مسابقات…</div></div><div class="sectionhead"><h2>اخبار و تحلیل‌ها</h2></div><div class="grid"><div class="card"><span class="tag">تحلیل</span><h3>چرا عرض زمین در حمله مهم است؟</h3><p class="muted">باز کردن ساختار دفاعی حریف با استفاده از عرض و ایجاد فضا در نیم‌فضاها.</p></div><div class="card"><span class="tag">آموزش</span><h3>آشنایی با پرس از جلو</h3><p class="muted">هماهنگی خط اول فشار و بستن مسیرهای پاس برای هدایت بازی‌سازی حریف.</p></div><div class="card"><span class="tag">تاریخ فوتبال</span><h3>تغییر شکل سیستم‌های سه‌دفاعه</h3><p class="muted">چگونه نقش وینگ‌بک‌ها در فوتبال مدرن تغییر کرده است.</p></div></div></section>
+<section class="page" id="tactics"><div class="eyebrow">TACTICAL LIBRARY</div><h1>کتابخانه تاکتیک</h1><p class="muted">هر مربی یک پرونده تحلیلی مستقل دارد؛ محتوای فعلی نمونه اولیه است و باید برای هر مربی تکمیل و راستی‌آزمایی شود.</p><div class="controls"><input id="coachSearch" placeholder="جست‌وجوی مربی..." oninput="filterCoaches()"><select id="styleFilter" onchange="filterCoaches()"><option value="">همه سبک‌ها</option><option>مالکیت توپ</option><option>پرس شدید</option><option>دفاع ساختاریافته</option><option>انعطاف تاکتیکی</option></select></div><div class="coachgrid" id="coachGrid"></div><div class="notice">پرونده کامل سیمونه اینزاگی از فایل قبلی پروژه در دسترس است: روی کارت او بزن تا صفحه کامل باز شود. سایر کارت‌ها فعلاً معرفی اولیه‌اند و باید به عمق همان پرونده ارتقا پیدا کنند.</div></section>
+<section class="page" id="lab"><div class="eyebrow">TACTICAL LAB</div><h1>آزمایشگاه تاکتیکی</h1><p class="muted">آرایش را انتخاب کن و بازیکنان آبی را روی زمین بکش. جای بازیکنان در همین مرورگر قابل ذخیره است.</p><div class="split"><div><div class="controls"><select id="formation" onchange="setFormation(this.value)"><option value="433">4-3-3</option><option value="4231">4-2-3-1</option><option value="352">3-5-2</option><option value="442">4-4-2</option></select><button class="btn secondary" onclick="resetPitch()">بازنشانی</button><button class="btn" onclick="savePitch()">ذخیره آرایش</button></div><div class="pitch" id="pitch"><div class="halfline"></div><div class="center"></div><div class="boxarea left"></div><div class="boxarea right"></div><div class="pitchhint">بازیکنان آبی قابل جابه‌جایی هستند</div></div></div><div class="card"><h3>راهنمای مربی</h3><p class="muted" id="formationDesc">در 4-3-3 سه بازیکن خط حمله عرض و عمق ایجاد می‌کنند و سه هافبک تعادل می‌سازند.</p><div class="list"><div class="listitem">عرض در حمله <span>وینگرها</span></div><div class="listitem">تعادل میانه <span>هافبک‌ها</span></div><div class="listitem">پوشش عمق <span>مدافعان</span></div></div><div class="notice">این برد فعلاً برای چیدمان ساده بازیکنان است؛ ترسیم مسیر پاس، انیمیشن حرکت و ذخیره چندین تاکتیک در مراحل بعدی اضافه می‌شود.</div></div></div></section>
+<section class="page" id="fantasy"><div class="eyebrow">FANTASY LEAGUE</div><h1>فانتزی لیگ</h1><p class="muted">پیش‌بینی تمرینی برای سرگرمی و یادگیری فوتبال؛ بدون پول واقعی، شرط‌بندی یا خرید اعتباری.</p><div class="stats"><div class="stat"><span class="label">امتیاز تو</span><strong id="fantasyXP">۱۲۰</strong><small>XP تمرینی</small></div><div class="stat"><span class="label">بازیکنان تیم</span><strong id="squadCount">۳</strong><small>بازیکن مجازی</small></div><div class="stat"><span class="label">رتبه آزمایشی</span><strong>#۲۴</strong><small>نمونه نمایشی</small></div><div class="stat"><span class="label">لیگ</span><strong>جهانی</strong><small>نسخه محلی</small></div></div><div class="split"><div class="card"><h3>چالش پیش‌بینی مسابقه</h3><div class="question"><b>در یک مسابقه فرضی، کدام تیم برنده می‌شود؟</b><p class="muted">سیتی 🆚 آرسنال</p><div class="options" id="prediction"><button onclick="choosePrediction(this,'سیتی')">منچسترسیتی</button><button onclick="choosePrediction(this,'مساوی')">مساوی</button><button onclick="choosePrediction(this,'آرسنال')">آرسنال</button></div><p class="muted" id="predictionResult">یک گزینه انتخاب کن؛ این فقط یک تمرین دانشی است.</p></div><button class="btn" onclick="submitPrediction()">ثبت پاسخ تمرینی</button></div><div class="card"><h3>ساخت تیم مجازی</h3><p class="muted">با XP تمرینی بازیکن مجازی به ترکیبت اضافه کن.</p><div class="list" id="playerShop"></div><p class="muted" id="shopMsg">امتیاز فقط داخل نسخه آزمایشی معنا دارد.</p></div></div></section>
+<section class="page" id="masters"><div class="eyebrow">FOOTBALL MASTERS</div><h1>آکادمی فوتبال</h1><p class="muted">داستان مربیان، تاریخ تاکتیک و تمرین تصمیم‌گیری.</p><div class="grid"><div class="card"><div class="bigico">📚</div><h3>Football History</h3><p class="muted">سیر تحول آرایش‌ها، قوانین و سبک‌های بازی.</p></div><div class="card"><div class="bigico">🎬</div><h3>Match Stories</h3><p class="muted">تحلیل مسابقات تاریخی و تصمیمات تاکتیکی سرنوشت‌ساز.</p></div><div class="card"><div class="bigico">🧩</div><h3>Learn & Challenge</h3><p class="muted">تمرین تشخیص فضا، انتخاب آرایش و درک نقش بازیکنان.</p></div></div><div class="sectionhead"><h2>BE THE COACH</h2><span class="tag">چالش تعاملی</span></div><div class="card"><h3>دقیقه ۷۰؛ تیم تو در حال حمله است اما حریف با دو خط فشرده دفاع می‌کند.</h3><p class="muted">برای ایجاد موقعیت، کدام تصمیم را ترجیح می‌دهی؟</p><div class="options" id="coachChoices"><button onclick="coachAnswer(this,0)">تغییر جهت سریع بازی و استفاده از عرض</button><button onclick="coachAnswer(this,1)">ارسال توپ بلند بدون حمایت</button><button onclick="coachAnswer(this,2)">عقب‌نشینی کامل همه بازیکنان</button></div><p class="muted" id="coachFeedback"></p></div></section>
+<section class="page" id="community"><div class="eyebrow">GLOBAL COMMUNITY</div><h1>لیگ عمومی و جامعه</h1><p class="muted">هدف نهایی: یک لیگ مشترک برای همه کاربران، با امکان دعوت دوستان به همان لیگ.</p><div class="split"><div class="card"><h3>جدول لیگ آزمایشی</h3><div class="list"><div class="listitem">۱. Blue Tacticians <b>۳۲۰ XP</b></div><div class="listitem">۲. Football Mind <b>۲۸۰ XP</b></div><div class="listitem">۳. Your Team <b id="communityXP">۱۲۰ XP</b></div><div class="listitem">۴. Goal Hunters <b>۹۵ XP</b></div></div><span class="demo">داده‌های نمونه</span></div><div class="card"><h3>دعوت دوستان</h3><p class="muted">در نسخه نهایی، لینک دعوت یکتا ساخته می‌شود و دوستت وارد لیگ عمومی خواهد شد.</p><input id="inviteCode" value="FOOTBALL-ZONE-2026" readonly style="width:100%;background:#091828;border:1px solid var(--line);padding:12px;color:white;border-radius:9px"><button class="btn" style="margin-top:10px" onclick="copyInvite()">کپی کد دعوت</button><p class="muted" id="inviteMsg">ورود، چت و همگام‌سازی فعلاً به بک‌اند نیاز دارند.</p></div></div><div class="notice">ثبت‌نام پیامکی، پروفایل دائمی، چت همگانی/خصوصی و لیگ آنلاین واقعی در این نسخه متصل نیستند؛ برای فعال‌شدن به سرور، پایگاه داده و سرویس پیامک امن نیاز دارند.</div></section>
+</main></div><div class="modal" id="modal" onclick="if(event.target===this)closeModal()"><div class="modalbox"><button class="close" onclick="closeModal()">بستن ✕</button><div id="modalContent"></div></div></div>
+<script>
+const coaches=[
+{name:"سیمونه اینزاگی",en:"Simone Inzaghi",style:"انعطاف تاکتیکی",formation:"3-5-2",desc:"ساختار سه‌دفاعه، نقش فعال وینگ‌بک‌ها، دو مهاجم مکمل و گردش توپ هدفمند.",strength:"برتری عددی در میانه، تنوع حمله و تغییر شکل در فازهای بازی.",weak:"فضای پشت وینگ‌بک‌ها و وابستگی به هماهنگی مدافعان مرکزی.",why:"سه مدافع پایه‌ای برای پوشش می‌سازند؛ وینگ‌بک‌ها عرض می‌دهند و دو مهاجم مدافعان را درگیر می‌کنند.",file:true},
+{name:"ژوزه مورینیو",en:"José Mourinho",style:"دفاع ساختاریافته",formation:"4-2-3-1 / 4-3-3",desc:"سازمان دفاعی، مدیریت فضا، انتقال سریع و استفاده از نقاط ضعف حریف.",strength:"انسجام دفاعی و کیفیت انتقال به حمله.",weak:"در برخی مسابقات ممکن است مالکیت و خلق موقعیت محدود شود.",why:"تیم فضاهای مرکزی را می‌بندد و پس از توپ‌گیری با پاس‌های عمقی سریع به فضای پشت دفاع حمله می‌کند."},
+{name:"هانسی فلیک",en:"Hansi Flick",style:"پرس شدید",formation:"4-2-3-1",desc:"خط دفاع جلو، پرس تهاجمی، سرعت انتقال و حمله مستقیم به عمق.",strength:"بازپس‌گیری سریع توپ و رسیدن سریع به محوطه.",weak:"فضای پشت خط دفاع بالا و نیاز به هماهنگی پرس.",why:"فشار هماهنگ زمان تصمیم حریف را کم می‌کند؛ توپ‌گیری نزدیک دروازه، مسیر رسیدن به موقعیت را کوتاه می‌کند."},
+{name:"وینسنت کمپانی",en:"Vincent Kompany",style:"مالکیت توپ",formation:"4-2-3-1",desc:"شروع بازی از عقب، ساختار مالکانه و تلاش برای کنترل مناطق میانی.",strength:"ایجاد گزینه پاس و کنترل ریتم بازی.",weak:"ریسک از دست دادن توپ در مناطق حساس هنگام اصرار بر بازی‌سازی کوتاه.",why:"پخش بازیکنان در عرض و عمق، خطوط پاس متعددی می‌سازد و به تیم اجازه می‌دهد فشار حریف را با پاس بشکند."},
+{name:"پپ گواردیولا",en:"Pep Guardiola",style:"مالکیت توپ",formation:"4-3-3 / 3-2-4-1",desc:"کنترل فضا، برتری عددی، اشغال نیم‌فضاها و تغییر شکل بر اساس فاز بازی.",strength:"کنترل ریتم، ایجاد برتری در مناطق کلیدی و گردش توپ.",weak:"فضای پشت بازیکنان جلو رفته در صورت انتقال دفاعی نامنظم.",why:"با ایجاد برتری عددی اطراف توپ، گزینه پاس بیشتر می‌شود و حریف مجبور به جابه‌جایی مداوم است."},
+{name:"یورگن کلوپ",en:"Jürgen Klopp",style:"پرس شدید",formation:"4-3-3",desc:"گگن‌پرس، انتقال سریع و حمله با ریتم و شدت بالا.",strength:"تبدیل توپ‌گیری به موقعیت و فشار مستمر.",weak:"نیاز فیزیکی و فضای قابل استفاده پشت خط فشار.",why:"پس از ازدست‌دادن توپ، نزدیک‌ترین بازیکنان فوراً فشار می‌آورند تا حریف نتواند ضدحمله را سازمان دهد."},
+{name:"کارلو آنچلوتی",en:"Carlo Ancelotti",style:"انعطاف تاکتیکی",formation:"4-3-3 / 4-4-2",desc:"مدیریت بازیکنان، انعطاف سیستم و تطبیق با ویژگی‌های ستاره‌ها.",strength:"سازگاری با حریف و استفاده از کیفیت فردی.",weak:"تغییر نقش‌ها گاهی به هماهنگی و زمان نیاز دارد.",why:"به‌جای تحمیل یک الگوی ثابت، نقش‌ها با توانایی بازیکنان تنظیم می‌شوند تا کیفیت فردی در ساختار تیمی اثرگذار باشد."},
+{name:"دیگو سیمئونه",en:"Diego Simeone",style:"دفاع ساختاریافته",formation:"4-4-2",desc:"فشردگی خطوط، دفاع منطقه‌ای، نبردهای دوئل و ضدحمله.",strength:"حفاظت از مرکز و کاهش فضای بین خطوط.",weak:"در برابر تیم‌هایی با گردش توپ سریع و عرض زیاد ممکن است تحت فشار قرار گیرد.",why:"فاصله کم خطوط، پاس به مناطق مرکزی را دشوار می‌کند و تیم را به سمت کناره‌ها هدایت می‌کند."}
+];
+const faNums=n=>String(n).replace(/\d/g,d=>"۰۱۲۳۴۵۶۷۸۹"[d]);
+function renderCoaches(){document.getElementById('coachGrid').innerHTML=coaches.map((c,i)=>`<article class="coach" data-style="${c.style}" data-name="${c.name} ${c.en}" onclick="openCoach(${i})"><div class="initial">${c.name[0]}</div><span class="tag">${c.style}</span><h3>${c.name}</h3><div class="muted">${c.en}</div><p>${c.desc}</p><div class="link">مشاهده پرونده تاکتیکی ←</div></article>`).join('')}
+function filterCoaches(){let q=document.getElementById('coachSearch').value.toLowerCase(),s=document.getElementById('styleFilter').value;document.querySelectorAll('.coach').forEach(el=>el.style.display=(el.dataset.name.toLowerCase().includes(q)&&(!s||el.dataset.style===s))?'':'none')}
+function coachExtra(c){
+ const style=c.style;
+ const common={
+ "مالکیت توپ":{
+  build:"در شروع بازی، مدافعان و دروازه‌بان با ایجاد زاویه‌های پاس تلاش می‌کنند بازیکن آزاد را مقابل خط اول فشار پیدا کنند. هافبک پایه باید همیشه گزینه امن و رو به جلو باشد.",
+  attack:"عرض زمین برای باز کردن بلوک دفاعی حفظ می‌شود و بازیکنان بین خطوط و نیم‌فضاها جای می‌گیرند. هدف فقط پاس‌های زیاد نیست؛ هر پاس باید ساختار حریف را جابه‌جا کند.",
+  defend:"تیم باید پس از ازدست‌دادن توپ، فاصله بازیکنان نزدیک را حفظ کند و مسیر ضدحمله مرکزی را ببندد. دفاع انتقالی بخشی از طراحی مالکیت است.",
+  transition:"پس از توپ‌گیری، تیم می‌تواند دوباره مالکیت را تثبیت کند یا اگر فضای جلو باز است سریع حمله کند. انتخاب بین آرام‌کردن بازی و حمله سریع به موقعیت بستگی دارد.",
+  roles:"مدافعان: پیشروی و پاس‌سازی؛ هافبک پایه: کنترل ریتم؛ بازیکن بین خطوط: چرخش و پاس نهایی؛ وینگر: عرض یا حرکت به داخل؛ مهاجم: تثبیت مدافعان و حمله به عمق.",
+  counter:"پرس هماهنگ روی بازیکن پایه، بستن خطوط پاس مرکزی و حمله به فضای پشت بازیکنان جلوآمده می‌تواند این سبک را مختل کند.",
+  training:"تمرین خروج از پرس ۷ در برابر ۵: تیم مالک باید با حفظ عرض، بازیکن آزاد را پیدا کند و توپ را به منطقه میانی منتقل کند."
+ },
+ "پرس شدید":{
+  build:"در شروع بازی، تیم باید گزینه‌های کوتاه و بلند را هم‌زمان آماده کند تا در صورت بسته‌شدن مسیر کوتاه، بتواند از فشار عبور کند.",
+  attack:"پس از توپ‌گیری، بازیکنان با سرعت به فضای خالی حمله می‌کنند. حرکت بدون توپ و حمایت نفر دوم و سوم باعث می‌شود انتقال به حمله فقط به یک بازیکن وابسته نباشد.",
+  defend:"پرس باید گروهی و جهت‌دار باشد؛ بازیکن اول مسیر پاس را هدایت می‌کند و هم‌تیمی‌ها گزینه‌های بعدی را می‌بندند. خط دفاع نیز باید فاصله پشت پرس را کنترل کند.",
+  transition:"پس از ازدست‌دادن توپ، فشار فوری برای بازپس‌گیری یا کندکردن ضدحمله لازم است. اگر پرس اول شکست خورد، تیم باید سریع به بلوک منظم برگردد.",
+  roles:"مهاجم: هدایت پرس؛ وینگر: بستن مسیر کناری؛ هافبک: شکار پاس بعدی؛ مدافع: حفظ خط و پوشش فضای پشت.",
+  counter:"پاس اول دقیق، تغییر جهت سریع و استفاده از فضای پشت خط دفاع بالا می‌تواند موج اول پرس را دور بزند.",
+  training:"تمرین انتقال ۶ در برابر ۶: پس از ازدست‌دادن توپ، تیم سه ثانیه برای بازپس‌گیری دارد؛ در غیر این صورت باید به آرایش دفاعی برگردد."
+ },
+ "دفاع ساختاریافته":{
+  build:"تیم می‌تواند با توجه به فشار حریف از پاس کوتاه یا بازی مستقیم استفاده کند. مهم است که بازیکنان برای توپ دوم و حمایت از مهاجم آماده باشند.",
+  attack:"حمله‌ها معمولاً با تشخیص فضای آزاد و انتقال سریع شکل می‌گیرند. حرکت مهاجم به کانال کناری و حمایت هافبک‌ها می‌تواند راه خروج از فشار باشد.",
+  defend:"فاصله خطوط کم می‌شود و تیم تلاش می‌کند مرکز را ببندد. فشار روی توپ باید با پوشش مسیر پاس بعدی همراه باشد تا خطوط از هم جدا نشوند.",
+  transition:"پس از توپ‌گیری، گزینه رو به جلو بررسی می‌شود؛ اگر ضدحمله ممکن نبود، تیم مالکیت را حفظ می‌کند. پس از ازدست‌دادن توپ، بازگشت به بلوک و بستن مرکز اولویت دارد.",
+  roles:"هافبک دفاعی: محافظت از مرکز؛ مدافعان: کنترل عمق؛ بازیکنان کناری: کمک دفاعی و خروج سریع؛ مهاجم: حفظ توپ و ایجاد تهدید در عمق.",
+  counter:"گردش سریع توپ، استفاده از عرض و حضور بازیکنان بین خطوط می‌تواند بلوک فشرده را به حرکت وادار کند و شکاف ایجاد کند.",
+  training:"تمرین دفاع بلوکی ۸ در برابر ۶: تیم مدافع مرکز را می‌بندد و پس از توپ‌گیری باید با چند پاس به منطقه هدف برسد."
+ },
+ "انعطاف تاکتیکی":{
+  build:"روش شروع بازی با توجه به کیفیت مدافعان، هافبک‌ها و شیوه پرس حریف انتخاب می‌شود؛ گاهی پاس کوتاه و گاهی عبور مستقیم از خط اول منطقی‌تر است.",
+  attack:"نقش بازیکنان خلاق و مهاجمان با توجه به ویژگی‌هایشان تنظیم می‌شود. آزادی فردی زمانی مفید است که پوشش و تعادل تیمی حفظ شود.",
+  defend:"تیم می‌تواند بین پرس در مناطق مشخص و بلوک میانی منظم جابه‌جا شود. تصمیم باید بر اساس شرایط مسابقه و توان بازیکنان باشد.",
+  transition:"پس از توپ‌گیری، کیفیت تصمیم بازیکنان خلاق و سرعت حمایت هم‌تیمی‌ها تعیین‌کننده است؛ پس از ازدست‌دادن توپ، تعادل پشت توپ اهمیت دارد.",
+  roles:"هافبک مرکزی: اتصال خطوط؛ بازیکن خلاق: پاس نهایی؛ وینگر: عرض یا حرکت به داخل؛ مهاجم: تهدید عمق و حضور در محوطه.",
+  counter:"محدودکردن فضای بازیکنان خلاق، بستن مسیر پاس به مهاجم و مجبورکردن تیم به بازی در مناطق کم‌خطر می‌تواند اثرگذاری آن‌ها را کم کند.",
+  training:"تمرین سناریویی: در سه موقعیت مختلف نقش بازیکن خلاق و هافبک پایه را تغییر بده و بررسی کن تیم همچنان تعادل دفاعی دارد یا نه."
+ }};
+ let d=common[style]||common["انعطاف تاکتیکی"];
+ let special={
+ "سیمونه اینزاگی":{caseStudy:"در دوره موفق اینتر، ساختار سه‌دفاعه به تیم اجازه می‌داد در مالکیت با وینگ‌بک‌های بالا و هافبک‌های نزدیک به مهاجمان حمله کند؛ در دفاع نیز تیم می‌توانست به بلوک ۵-۳-۲ جمع شود.",phases:"بدون توپ: ۵-۳-۲ فشرده؛ شروع حمله: سه مدافع و هافبک پایه؛ پیشروی: وینگ‌بک‌ها عرض می‌دهند؛ خلق موقعیت: هافبک‌ها به نیم‌فضا و دو مهاجم با حرکت مکمل عمق را تهدید می‌کنند.",signals:"وینگ‌بک آزاد برای دریافت، هافبک رو به جلو بین خطوط، فاصله مناسب دو مهاجم و پوشش پشت وینگ‌بکِ پیش‌رفته.",history:"اینزاگی در لاتزیو و اینتر از ساختارهای سه‌دفاعه با نقش فعال وینگ‌بک‌ها و همکاری دو مهاجم استفاده کرده است. شکل دقیق تیم در فصل‌ها و مسابقات مختلف تغییر می‌کند.",build:"سه مدافع پایه بازی‌سازی را شکل می‌دهند؛ هافبک‌ها زاویه پاس می‌سازند و در صورت بسته‌شدن مرکز، توپ به وینگ‌بک منتقل می‌شود.",attack:"وینگ‌بک‌ها عرض می‌دهند، هافبک‌ها به نیم‌فضاها اضافه می‌شوند و دو مهاجم با حرکت مکمل مدافعان را درگیر می‌کنند.",roles:"مدافع مرکزی: پوشش و شروع بازی؛ وینگ‌بک: عرض و پیشروی؛ هافبک: اتصال خطوط؛ مهاجم: حفظ توپ و حمله به عمق."},
+ "ژوزه مورینیو":{caseStudy:"در تیم‌های مختلف مورینیو، از چلسی تا اینتر و رئال مادرید، ساختارها با بازیکنان تغییر کرده‌اند؛ نمونه شناخته‌شده، اینتر ۲۰۱۰ با بلوک دفاعی منظم و انتقال‌های سریع بود.",phases:"بدون توپ: بستن مرکز و حفظ فاصله خطوط؛ توپ‌گیری: پاس اول امن؛ انتقال: حمله به فضای پشت مدافعان؛ در صورت بسته‌بودن ضدحمله: حفظ توپ و بالا آمدن تیم.",signals:"فاصله کم خطوط، پوشش هافبک دفاعی، آماده‌بودن مهاجم برای حفظ توپ و حمایت سریع بازیکنان کناری.",history:"مورینیو در تیم‌های مختلف از ساختارهای متفاوتی استفاده کرده؛ سازمان دفاعی، مدیریت فضا و برنامه‌ریزی برای انتقال‌ها از ویژگی‌های پرتکرار تیم‌های اوست.",attack:"استفاده از فضای پشت دفاع، پاس عمقی و خروج سریع از فشار از مسیرهای رایج حمله است."},
+ "هانسی فلیک":{caseStudy:"بایرن مونیخ فصل ۲۰-۲۰۱۹ نمونه‌ای از پرس جلو، خط دفاع بالا و انتقال سریع بود. اجرای این سبک به هماهنگی جمعی و آمادگی بدنی بالا نیاز دارد.",phases:"شروع پرس با مهاجم؛ بستن پاس به هافبک پایه؛ فشرده‌شدن تیم اطراف توپ؛ پس از توپ‌گیری حمله سریع به عمق؛ در صورت عبور حریف از پرس، بازگشت هماهنگ خط دفاع.",signals:"فاصله کم خطوط، نزدیک‌شدن نفرات به محل توپ، بسته‌شدن مسیر پاس رو به جلو و آماده‌بودن مدافعان برای پوشش عمق.",history:"فلیک با فوتبال پرشدت، پرس جلو و حمله سریع شناخته می‌شود. ارتفاع خط دفاع و شدت پرس با توجه به حریف و شرایط مسابقه تغییر می‌کند.",defend:"خط دفاع جلو می‌آید تا فضای بین خطوط کم شود؛ مهاجمان و هافبک‌ها مسیر پاس به بازیکن آزاد را می‌بندند."},
+ "وینسنت کمپانی":{caseStudy:"تیم‌های کمپانی به‌ویژه در برنلی و بایرن با ایده بازی‌سازی از عقب و کنترل توپ شناخته می‌شوند؛ میزان ریسک این رویکرد باید با کیفیت بازیکنان و فشار حریف تنظیم شود.",phases:"دروازه‌بان و مدافعان عرض می‌سازند؛ هافبک‌ها پشت یا کنار خط اول فشار زاویه می‌گیرند؛ بازیکن آزاد با پاس عمودی پیدا می‌شود؛ پس از عبور از پرس، بازیکنان جلو عرض و عمق را پر می‌کنند.",signals:"وجود گزینه پاس امن، هافبک آزاد پشت خط اول پرس، فاصله مناسب خطوط و پوشش پشت توپ.",history:"کمپانی به‌عنوان مربی بر بازی‌سازی از عقب و کنترل توپ تأکید داشته است؛ اجرای این ایده به کیفیت فنی بازیکنان و فشار حریف وابسته است."},
+ "پپ گواردیولا":{caseStudy:"بارسلونای دوران گواردیولا، بایرن و منچسترسیتی نسخه‌های متفاوتی از مالکیت و کنترل فضا ارائه کردند؛ در سیتی، شکل ۳-۲-۴-۱ در برخی فازهای مالکیت دیده شده است.",phases:"ساختار اولیه برای خروج امن؛ ایجاد برتری عددی در میانه؛ اشغال نیم‌فضاها؛ جابه‌جایی سریع توپ برای آزادکردن سمت مخالف؛ پس از ازدست‌دادن توپ، فشار نزدیک و محافظت از مرکز.",signals:"بازیکن آزاد در میانه، حضور بین خطوط، عرض مناسب وینگرها، و پوشش دفاعی کافی پشت توپ.",history:"گواردیولا در بارسلونا، بایرن و منچسترسیتی نسخه‌های متفاوتی از فوتبال مالکانه را اجرا کرده است. سیستم دقیق ثابت نیست و با بازیکنان و شرایط مسابقه تغییر می‌کند.",attack:"اشغال عرض و نیم‌فضاها، حضور بین خطوط و ایجاد برتری عددی اطراف توپ به تیم کمک می‌کند ساختار حریف را جابه‌جا کند."},
+ "یورگن کلوپ":{caseStudy:"دورتموند و لیورپول کلوپ نمونه‌های مهم فوتبال انتقالی و گگن‌پرس هستند؛ لیورپول در دوره قهرمانی اروپا و لیگ برتر از شدت و سرعت انتقال بهره می‌برد.",phases:"هدایت بازی حریف به یک سمت؛ فشردگی اطراف توپ؛ تلاش برای توپ‌گیری؛ حمله سریع به فضای آزاد؛ اگر توپ‌گیری ممکن نبود، عقب‌نشینی و بازسازی بلوک.",signals:"نزدیکی سه بازیکن به توپ، پوشش مسیر پاس عقب و مرکزی، آمادگی برای پاس عمقی پس از توپ‌گیری.",history:"کلوپ با دورتموند و لیورپول به فوتبال پرشدت، انتقال سریع و گگن‌پرس شناخته شد. این رویکرد در دوره‌های مختلف تکامل پیدا کرد.",transition:"گگن‌پرس یعنی تلاش هماهنگ برای بازپس‌گیری توپ بلافاصله پس از ازدست‌دادن آن؛ نه دویدن بی‌هدف به سمت توپ."},
+ "کارلو آنچلوتی":{caseStudy:"آنچلوتی در میلان، رئال مادرید و تیم‌های دیگر با توجه به ترکیب بازیکنان سیستم‌های متفاوتی به کار گرفته است؛ انعطاف و مدیریت نقش‌ها از ویژگی‌های برجسته اوست.",phases:"ارزیابی توان بازیکنان؛ انتخاب ساختار پایه؛ تعریف نقش‌های مکمل؛ تنظیم ارتفاع پرس و مالکیت بر اساس حریف؛ تغییر سیستم با تعویض یا تغییر شرایط مسابقه.",signals:"تعادل بین آزادی بازیکنان خلاق و پوشش دفاعی، هماهنگی خط میانی و تطبیق نقش‌ها با نقاط قوت تیم.",history:"آنچلوتی در دوران طولانی مربیگری با تیم‌ها و نسل‌های متفاوت کار کرده و معمولاً به انعطاف سیستم و مدیریت ویژگی‌های بازیکنان اهمیت داده است."},
+ "دیگو سیمئونه":{caseStudy:"اتلتیکومادرید سیمئونه در دوره‌های مختلف با بلوک ۴-۴-۲ فشرده، ضدحمله و سپس دوره‌هایی با مالکیت و پرس متفاوت بازی کرده است؛ سبک او یک نسخه ثابت و همیشگی نیست.",phases:"جمع‌شدن خطوط در بلوک میانی یا پایین؛ هدایت حریف به کناره‌ها؛ فشار در لحظه مناسب؛ توپ‌گیری؛ خروج سریع با مهاجم و حمایت هافبک‌ها.",signals:"فاصله کم خطوط، محافظت از نیم‌فضا، پوشش کناره‌ها و آماده‌بودن بازیکنان برای ضدحمله.",history:"سیمئونه در اتلتیکومادرید به ساختار دفاعی منظم، فشردگی خطوط و رقابت‌پذیری مشهور است؛ تیم‌های او در دوره‌های مختلف تغییرات تاکتیکی هم داشته‌اند.",defend:"دو خط نزدیک به هم، فضای بین خطوط را محدود می‌کنند و تلاش می‌شود حریف به کناره‌ها هدایت شود."}
+ };
+ return {...d,...(special[c.name]||{})};
+}
+function openCoach(i){
+ let c=coaches[i];
+ const box=document.querySelector('.modalbox');
+ box.classList.add('wide');
+ if(c.file){
+  document.getElementById('modalContent').innerHTML=`<div class="eyebrow">TACTICAL DOSSIER · SIMONE INZAGHI</div><h2>پرونده کامل سیمونه اینزاگی</h2><p class="muted">پرونده اصلی در همین پنجره نمایش داده می‌شود؛ برای بازگشت فقط «بستن» را بزن.</p><iframe title="پرونده تاکتیکی سیمونه اینزاگی" src="simone-inzaghi.html" style="display:block;width:100%;height:79vh;border:1px solid #294966;border-radius:12px;background:#07111f"></iframe>`;
+ }else{
+  let d=coachExtra(c);
+  const sections=[
+   ["۱. پیشینه و مسیر مربیگری",d.history||"مروری بر مسیر مربیگری و تغییرات سبک در تیم‌های مختلف."],
+   ["۲. فلسفه و اصول پایه",c.desc],
+   ["۳. بازی‌سازی از عقب",d.build],["۴. ساختار حمله",d.attack],
+   ["۵. سازمان دفاعی",d.defend],["۶. انتقال‌ها",d.transition],
+   ["۷. نقش بازیکنان",d.roles],["۸. آرایش‌های شاخص",c.formation],
+   ["۹. WHY IT WORKS | چرا جواب می‌دهد؟",c.why],
+   ["۱۰. نقاط قوت",c.strength],["۱۱. محدودیت‌ها و نقاط آسیب‌پذیر",c.weak],
+   ["۱۲. چه زمانی استفاده کنیم؟", "وقتی ویژگی بازیکنان و شرایط مسابقه با اصول این سبک هماهنگ باشد؛ هیچ سیستم تاکتیکی در همه مسابقات بهترین گزینه نیست."],
+   ["۱۳. راه‌های مقابله با این سبک",d.counter],["۱۴. تمرین پیشنهادی",d.training],
+   ["۱۵. مطالعه موردی و نمونه دوره مربیگری",d.caseStudy||"برای تحلیل دقیق، یک مسابقه کامل از تیم مربی انتخاب و رفتار تیم در سه فاز مالکیت، دفاع و انتقال جداگانه بررسی شود."],
+   ["۱۶. اجرای تاکتیک در چهار فاز",d.phases||"شروع بازی، پیشروی، خلق موقعیت و سازمان دفاعی باید به‌عنوان بخش‌های مرتبط یک ساختار واحد تمرین شوند."],
+   ["۱۷. نشانه‌های اجرای موفق",d.signals||"فاصله مناسب خطوط، گزینه‌های پاس کافی، پوشش پشت توپ و هماهنگی بازیکنان بدون توپ از نشانه‌های اجرای موفق هستند."],
+   ["۱۸. خطاهای رایج در اجرای این سبک", "تبدیل‌کردن ایده تاکتیکی به دستور ثابت، بی‌توجهی به ویژگی بازیکنان، فاصله زیاد خطوط و نداشتن برنامه جایگزین پس از شکست الگوی اول." ]
+  ];
+  document.getElementById('modalContent').innerHTML=`<div class="eyebrow">TACTICAL DOSSIER · COACH PROFILE</div><h2>${c.name}</h2><p class="muted">${c.en} · ${c.style}</p><div class="list"><div class="listitem">سیستم‌های شاخص <b>${c.formation}</b></div><div class="listitem">پرونده <b>تحلیل آموزشی تاکتیک</b></div></div>${sections.map(([h,p])=>`<div class="question"><h3>${h}</h3><p class="muted">${p}</p></div>`).join('')}<div class="notice">نکته تحلیلی: مربیان در فصل‌ها و مسابقات مختلف سیستم و نقش‌ها را تغییر می‌دهند؛ این پرونده اصول شاخص را آموزش می‌دهد و ادعا نمی‌کند یک آرایش همیشه استفاده می‌شود.</div>`;
+ }
+ document.getElementById('modal').classList.add('show');
+}
+function closeModal(){document.getElementById('modal').classList.remove('show');document.querySelector('.modalbox').classList.remove('wide')}
+const pages={home:'داشبورد',hub:'فوتبال هاب',tactics:'کتابخانه تاکتیک',lab:'زمین تاکتیکی',fantasy:'فانتزی لیگ',masters:'فوتبال مسترز',community:'جامعه و لیگ عمومی'};
+function showPage(p){document.querySelectorAll('.page').forEach(x=>x.classList.toggle('active',x.id===p));document.querySelectorAll('.nav button').forEach(x=>x.classList.toggle('active',x.dataset.page===p));document.getElementById('crumb').textContent=pages[p];document.getElementById('sidebar').classList.remove('open');window.scrollTo(0,0)}
+document.querySelectorAll('.nav button').forEach(b=>b.addEventListener('click',()=>showPage(b.dataset.page)));
+const formations={433:[[50,88],[22,72],[40,75],[60,75],[78,72],[35,53],[50,57],[65,53],[18,25],[50,17],[82,25]],4231:[[50,88],[22,72],[40,75],[60,75],[78,72],[40,58],[60,58],[50,40],[18,24],[50,17],[82,24]],352:[[50,88],[25,72],[50,76],[75,72],[15,48],[35,53],[50,42],[65,53],[85,48],[38,19],[62,19]],442:[[50,88],[22,72],[40,75],[60,75],[78,72],[22,48],[42,50],[58,50],[78,48],[38,19],[62,19]]};
+let positions=[];function setFormation(f){positions=formations[f].map(p=>p.slice());renderPitch();document.getElementById('formationDesc').textContent=({433:'سه مهاجم عرض و عمق می‌دهند؛ سه هافبک تعادل و ارتباط خطوط را حفظ می‌کنند.',4231:'دو هافبک پایه از دفاع محافظت می‌کنند و هافبک هجومی بین خطوط بازی می‌کند.',352:'سه مدافع مرکزی با پنج هافبک و دو مهاجم ساختار می‌سازند؛ عرض عمدتاً با وینگ‌بک‌هاست.',442:'دو خط چهارنفره فشرده و دو مهاجم برای پرس و ضدحمله استفاده می‌شوند.'})[f]}
+function renderPitch(){let p=document.getElementById('pitch');p.querySelectorAll('.player').forEach(x=>x.remove());positions.forEach((pos,i)=>{let el=document.createElement('div');el.className='player';el.textContent=i===0?'GK':i<5?'D':i<8?'M':'F';el.style.left=pos[0]+'%';el.style.top=pos[1]+'%';el.dataset.i=i;p.appendChild(el);drag(el)})}
+function drag(el){let active=false;el.addEventListener('pointerdown',e=>{active=true;el.setPointerCapture(e.pointerId)});el.addEventListener('pointermove',e=>{if(!active)return;let r=document.getElementById('pitch').getBoundingClientRect();let x=Math.max(7,Math.min(93,(e.clientX-r.left)/r.width*100)),y=Math.max(6,Math.min(94,(e.clientY-r.top)/r.height*100));positions[+el.dataset.i]=[x,y];el.style.left=x+'%';el.style.top=y+'%'});el.addEventListener('pointerup',()=>active=false)}
+function resetPitch(){setFormation(document.getElementById('formation').value)}function savePitch(){localStorage.setItem('fz-pitch',JSON.stringify(positions));alert('آرایش در همین مرورگر ذخیره شد.')}
+let xp=120,squad=['دروازه‌بان مجازی','مدافع مجازی','هافبک مجازی'];let pred=null,submitted=false;
+function updateXP(){document.getElementById('xp').textContent=faNums(xp);document.getElementById('fantasyXP').textContent=faNums(xp);document.getElementById('communityXP').textContent=faNums(xp)+' XP';document.getElementById('squadCount').textContent=faNums(squad.length)}
+function choosePrediction(btn,v){if(submitted)return;pred=v;document.querySelectorAll('#prediction button').forEach(x=>x.classList.remove('chosen'));btn.classList.add('chosen')}
+function submitPrediction(){if(!pred){document.getElementById('predictionResult').textContent='اول یک گزینه انتخاب کن.';return}if(submitted){document.getElementById('predictionResult').textContent='این تمرین قبلاً ثبت شده است.';return}submitted=true;xp+=10;updateXP();document.getElementById('predictionResult').textContent='پاسخ تمرینی ثبت شد؛ ۱۰ امتیاز مشارکت گرفتی. نتیجه مسابقه نمونه از قبل تعیین نشده است.'}
+function renderShop(){let items=[['مهاجم مجازی',50],['مدافع مجازی',35],['هافبک مجازی',40]];document.getElementById('playerShop').innerHTML=items.map(([n,c])=>`<div class="listitem"><div>${n}<br><span>${faNums(c)} XP</span></div><button class="btn secondary" onclick="buyPlayer('${n}',${c})">افزودن</button></div>`).join('')}
+function buyPlayer(n,c){if(xp<c){document.getElementById('shopMsg').textContent='امتیاز تمرینی کافی نیست؛ در چالش‌ها شرکت کن.';return}xp-=c;squad.push(n);updateXP();document.getElementById('shopMsg').textContent=n+' به ترکیب مجازی اضافه شد.'}
+function coachAnswer(btn,n){document.querySelectorAll('#coachChoices button').forEach(x=>x.classList.remove('chosen'));btn.classList.add('chosen');let good=n===0;document.getElementById('coachFeedback').textContent=good?'انتخاب خوبی است! تغییر جهت بازی می‌تواند بلوک فشرده را جابه‌جا کند و فضای سمت مخالف را فعال کند.':'این انتخاب ممکن است به حریف اجازه دهد ساختار دفاعی‌اش را حفظ کند. به دنبال جابه‌جایی بلوک دفاعی و ایجاد فضای آزاد باش.';if(good){xp+=5;updateXP()}}
+function copyInvite(){let t=document.getElementById('inviteCode');t.select();try{document.execCommand('copy');document.getElementById('inviteMsg').textContent='کد دعوت کپی شد.'}catch(e){document.getElementById('inviteMsg').textContent='کد را دستی کپی کن.'}}
+
+const LIVE_REFRESH_MS = 60 * 1000;
+let latestMatches = [];
+let liveTimer = null;
+let liveMode = 'date';
+const LIVE_ACTIVE = new Set(['1H','HT','2H','ET','BT','P','LIVE','SUSP','INT']);
+const LIVE_FINISHED = new Set(['FT','AET','PEN']);
+function statusLabel(m){
+  if(LIVE_ACTIVE.has(m.status)) return m.status==='HT'?'بین دو نیمه':(m.elapsed!=null?`${m.elapsed}′`:'زنده');
+  if(LIVE_FINISHED.has(m.status)) return 'پایان بازی';
+  if(['PST','CANC','ABD','AWD','WO'].includes(m.status)) return m.statusLong || 'وضعیت نامشخص';
+  const d=new Date(m.date);return Number.isNaN(d.getTime())?'برنامه‌ریزی‌شده':d.toLocaleTimeString('fa-IR',{hour:'2-digit',minute:'2-digit',timeZone:'Asia/Tehran'});
+}
+function escapeLiveText(v){return String(v??'').replace(/[&<>\"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;',"'":'&#39;'}[c]));}
+function matchCard(m){
+  const live=LIVE_ACTIVE.has(m.status), finished=LIVE_FINISHED.has(m.status);
+  const score=(m.homeGoals==null?'–':m.homeGoals)+' : '+(m.awayGoals==null?'–':m.awayGoals);
+  const logo=(url)=>/^https:\/\//i.test(url||'')?`<img src="${escapeLiveText(url)}" alt="" loading="lazy" onerror="this.style.display='none'">`:'';
+  return `<article class="live-card"><div class="live-card-top"><span>${escapeLiveText(m.league||'مسابقه')}${m.country?' · '+escapeLiveText(m.country):''}</span>${live?'<span class="live-badge">● زنده</span>':`<span>${statusLabel(m)}</span>`}</div><div class="live-teamline"><div class="live-team">${logo(m.homeLogo)}<span>${escapeLiveText(m.home)}</span></div><strong class="live-score">${score}</strong><div class="live-team away"><span>${escapeLiveText(m.away)}</span>${logo(m.awayLogo)}</div></div><div class="live-meta"><span>${escapeLiveText(m.round||m.venue||'FOOTBALL ZONE')}</span><span>${live?statusLabel(m):finished?'نتیجه نهایی':statusLabel(m)}</span></div><button class="btn secondary" style="margin-top:10px;padding:7px 10px" onclick="showMatchDetails('${escapeLiveText(m.detailSlug||m.id||'')}')">جزئیات مسابقه</button></article>`;
+}
+function paintMatches(targetId,matches){
+  const el=document.getElementById(targetId); if(!el)return;
+  if(!matches.length){el.innerHTML='<div class="live-empty">برای امروز مسابقه‌ای در داده‌های دریافتی پیدا نشد.<br>ممکن است در این تاریخ بازی‌ای برگزار نشود یا پوشش رقابت موردنظر در پلن API فعال نباشد.</div>';return;}
+  el.innerHTML=matches.map(matchCard).join('');
+}
+function applyLiveFilter(){
+  const f=document.getElementById('liveFilter')?.value||'all';
+  const filtered=latestMatches.filter(m=>f==='all'||(f==='live'&&LIVE_ACTIVE.has(m.status))||(f==='finished'&&LIVE_FINISHED.has(m.status))||(f==='upcoming'&&!LIVE_ACTIVE.has(m.status)&&!LIVE_FINISHED.has(m.status)));
+  paintMatches('liveMatches',filtered);
+}
+function detailSection(title,body){
+  return `<section class="question"><h3>${title}</h3>${body||'<p class="muted">اطلاعاتی برای این بخش از سرویس دریافت نشد.</p>'}</section>`;
+}
+function renderMatchEvents(events){
+  if(!events.length)return '';
+  const rows=events.map(e=>{
+    const minute=(e.time?.elapsed!=null?`${e.time.elapsed}′`:'');
+    const extra=e.time?.extra!=null?`+${e.time.extra}`:'';
+    const who=e.player?.name||'';
+    const assist=e.assist?.name?` · پاس گل: ${e.assist.name}`:'';
+    return `<div class="listitem"><b>${escapeLiveText(minute+extra)}</b> ${escapeLiveText(e.type||'رویداد')} — ${escapeLiveText(e.detail||'')}<br><span class="muted">${escapeLiveText(e.team?.name||'')} · ${escapeLiveText(who)}${escapeLiveText(assist)}</span></div>`;
+  }).join('');
+  return `<div class="list">${rows}</div>`;
+}
+function renderMatchStats(groups){
+  if(!groups.length)return '';
+  return groups.map(group=>{
+    const team=escapeLiveText(group.team?.name||'تیم');
+    const stats=(group.statistics||[]).map(x=>`<div class="listitem"><span>${escapeLiveText(x.type||'')}</span><b>${escapeLiveText(x.value==null?'—':String(x.value))}</b></div>`).join('');
+    return `<h4 style="margin:12px 0 6px">${team}</h4><div class="list">${stats}</div>`;
+  }).join('');
+}
+function renderMatchLineups(groups){
+  if(!groups.length)return '';
+  return groups.map(group=>{
+    const team=escapeLiveText(group.team?.name||'تیم');
+    const formation=escapeLiveText(group.formation||'');
+    const players=(group.startXI||[]).map(x=>{
+      const p=x.player||{};
+      return `<div class="listitem"><b>${escapeLiveText(p.number==null?'':String(p.number))}</b> ${escapeLiveText(p.name||'بازیکن')} <span class="muted">${escapeLiveText(p.pos||'')}</span></div>`;
+    }).join('');
+    const subs=(group.substitutes||[]).map(x=>{
+      const p=x.player||{};
+      return `<div class="listitem">${escapeLiveText(p.number==null?'':String(p.number))} ${escapeLiveText(p.name||'بازیکن')}</div>`;
+    }).join('');
+    const coach=group.coach?.name?`<p class="muted">مربی: ${escapeLiveText(group.coach.name)}</p>`:'';
+    return `<div class="question"><h4>${team} ${formation?'· '+formation:''}</h4>${coach}<b>ترکیب اصلی</b><div class="list">${players||'<p class="muted">ترکیب اعلام نشده است.</p>'}</div><b>بازیکنان ذخیره</b><div class="list">${subs||'<p class="muted">اطلاعات ذخیره‌ها موجود نیست.</p>'}</div></div>`;
+  }).join('');
+}
+async function showMatchDetails(slug){
+  const match=latestMatches.find(x=>String(x.id)===String(slug))||{};
+  const home=escapeLiveText(match.home||'میزبان'), away=escapeLiveText(match.away||'میهمان');
+  const modal=document.getElementById('modal'), box=modal.querySelector('.modalbox');
+  box.classList.add('wide'); modal.classList.add('show');
+  const target=document.getElementById('modalContent');
+  target.innerHTML=`<div class="eyebrow">MATCH CENTRE</div><h2>${home} - ${away}</h2><p class="muted">در حال دریافت آمار، رویدادها و ترکیب مسابقه…</p>`;
+  try{
+    const response=await fetch(`/api/match/${encodeURIComponent(String(slug))}`,{cache:'no-store'});
+    const result=await response.json();
+    if(!response.ok||!result.ok) throw new Error(result.message||'جزئیات مسابقه در دسترس نیست.');
+    const m=result.match||{};
+    const score=`${m.homeGoals==null?'—':m.homeGoals} : ${m.awayGoals==null?'—':m.awayGoals}`;
+    const summary=`<div class="list"><div class="listitem">نتیجه <b>${escapeLiveText(score)}</b></div><div class="listitem">وضعیت <b>${escapeLiveText(statusLabel(m))}</b></div><div class="listitem">رقابت <b>${escapeLiveText(m.league||'—')}</b></div><div class="listitem">ورزشگاه <b>${escapeLiveText(m.venue||'اعلام نشده')}</b></div><div class="listitem">مرحله <b>${escapeLiveText(m.round||'—')}</b></div></div>`;
+    const events=renderMatchEvents(result.events||[]);
+    const stats=renderMatchStats(result.statistics||[]);
+    const lineups=renderMatchLineups(result.lineups||[]);
+    target.innerHTML=`<div class="eyebrow">MATCH CENTRE · API-FOOTBALL</div><h2>${home} - ${away}</h2>${detailSection('خلاصه مسابقه',summary)}${detailSection('رویدادهای مسابقه',events)}${detailSection('آمار تیم‌ها',stats)}${detailSection('ترکیب و نیمکت',lineups)}<p class="muted">برخی اطلاعات، به‌ویژه ترکیب و آمار، فقط در صورت ارائه از سوی برگزارکننده و پوشش لیگ در API نمایش داده می‌شوند.</p>`;
+  }catch(error){
+    target.innerHTML=`<div class="eyebrow">MATCH CENTRE</div><h2>${home} - ${away}</h2><p class="muted">${escapeLiveText(error.message||'اطلاعات تکمیلی این مسابقه فعلاً در دسترس نیست.')}</p>`;
+  }
+}
+async function loadLiveMatches(manual=false, requestedMode=liveMode){
+  liveMode=requestedMode==='live'?'live':'date';
+  const msg=document.getElementById('liveMessage');
+  const connection=document.getElementById('liveConnection');
+  const button=document.getElementById('refreshLive');
+  if(button)button.disabled=true;
+  try{
+    const selectedDate=document.getElementById('liveDate')?.value||'';
+    const endpoint=liveMode==='live'?'/api/live':'/api/matches'+(selectedDate?'?date='+encodeURIComponent(selectedDate):'');
+    const response=await fetch(endpoint,{cache:'no-store'});
+    const data=await response.json();
+    if(!response.ok||!data.ok){
+      throw new Error(data.message||'اتصال به سرویس مسابقات ناموفق بود.');
+    }
+    const matches=data.matches||[];
+    latestMatches=matches;
+    applyLiveFilter();paintMatches('homeLiveMatches',matches.slice(0,4));
+    const liveCount=matches.filter(m=>LIVE_ACTIVE.has(m.status)).length;
+    if(connection)connection.textContent=liveCount?`${faNums(liveCount)} مسابقه زنده`:'اتصال برقرار است';
+    if(msg)msg.textContent=liveMode==='live'?`اطلاعات ${faNums(matches.length)} مسابقه زنده از همه لیگ‌های قابل‌دسترسی در API دریافت شد. ${data.cached?'از حافظه موقت سرور':'دریافت تازه از سرویس'}.`:`اطلاعات ${faNums(matches.length)} مسابقه در تاریخ ${data.date} به وقت تهران دریافت شد. ${data.cached?'از حافظه موقت سرور':'دریافت تازه از سرویس'}.`;
+    const updated=document.getElementById('liveUpdated');if(updated)updated.textContent='· '+new Date().toLocaleTimeString('fa-IR',{hour:'2-digit',minute:'2-digit'});
+  }catch(error){
+    if(connection)connection.textContent='اتصال برقرار نشد';
+    const html=`<div class="live-error">${escapeLiveText(error.message)}<br>نتیجه ساختگی نمایش داده نمی‌شود. کمی بعد دوباره تلاش کن.</div>`;
+    if(msg)msg.innerHTML=html;
+    ['liveMatches','homeLiveMatches'].forEach(id=>{const el=document.getElementById(id);if(el)el.innerHTML='<div class="live-empty">اطلاعات زنده در دسترس نیست.</div>';});
+  }finally{if(button)button.disabled=false;}
+}
+function startLiveRefresh(){if(liveTimer)clearInterval(liveTimer);liveTimer=setInterval(()=>loadLiveMatches(false),LIVE_REFRESH_MS)}
+
+const dateInput=document.getElementById('liveDate');if(dateInput){dateInput.value=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Tehran',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());dateInput.addEventListener('change',()=>loadLiveMatches(true,'date'));}
+renderCoaches();setFormation('433');renderShop();updateXP();
+loadLiveMatches(false);startLiveRefresh();
+
+// Installable PWA support. API responses are deliberately excluded from offline caching.
+let deferredInstallPrompt=null;
+const installButton=document.getElementById('installApp');
+const isStandalone=()=>window.matchMedia('(display-mode: standalone)').matches||window.navigator.standalone===true;
+if(installButton&&!isStandalone()) installButton.hidden=false;
+window.addEventListener('beforeinstallprompt',event=>{
+  event.preventDefault(); deferredInstallPrompt=event;
+  if(installButton) installButton.hidden=false;
+});
+window.addEventListener('appinstalled',()=>{
+  deferredInstallPrompt=null; if(installButton) installButton.hidden=true;
+});
+if(installButton) installButton.addEventListener('click',async()=>{
+  if(deferredInstallPrompt){deferredInstallPrompt.prompt(); await deferredInstallPrompt.userChoice; deferredInstallPrompt=null; installButton.hidden=true;}
+  else {alert('برای نصب در اندروید از منوی مرورگر گزینه Install app یا Add to Home screen را بزن. در آیفون: Share سپس Add to Home Screen. نصب فقط پس از انتشار سایت روی HTTPS فعال می‌شود.');}
+});
+if('serviceWorker' in navigator && location.protocol!=='file:'){
+  window.addEventListener('load',()=>navigator.serviceWorker.register('/sw.js').catch(()=>{}));
+}
+</script><div style="text-align:center;padding:14px 10px;color:#9aabc5;font-size:12px"><a href="https://www.api-football.com/" rel="dofollow" title="Sports data by SportScore" style="color:#9fc5ff;text-decoration:none;font-weight:700">Data by API-Football</a></div>
+</body></html>

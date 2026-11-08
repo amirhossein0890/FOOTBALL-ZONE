@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: football-zone
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /
+    envVars:
+      - key: APIFOOTBALL_KEY
+        sync: false
+      - key: SPORTS_CACHE_MS
+        value: "60000"
